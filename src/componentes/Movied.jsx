@@ -10,7 +10,7 @@ const MovieDetails = (props) => {
       const movie_id = props.nome;
       console.log(movie_id)
       try {
-        const response = await axios.get(`http://www.omdbapi.com/?t=${movie_id}&apikey=${api_key}`);
+        const response = await axios.get(`https://www.omdbapi.com/?t=${movie_id}&apikey=${api_key}`);
         
         setMovie(response.data);
         
